@@ -1,83 +1,145 @@
 --- 
-layout: default 
+layout: default
 ---
 
-
-<div class="row">
-    <h2>Modal</h2>
-    <ol>
-        <li>Here is the standard Modal code on Bootstrap's website. We will copy and customize it to our own website.</li>
-        <iframe width="100%" height="300" src="//jsfiddle.net/nycucumber/wr58k4of/embedded/html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-        <li>Bootstrap's modal works by matching "data-target" attribute with the id name of the actual model. So, let's id our model myModal</li>
-        <li>Also, we need to convert the thumbnail image associated to the Model by adding data-toggle and data-target.</li>
-        <li>lastly, we need a modal-body tag inside of modal-content tag that holds the actual modal image to be displayed.
-            <iframe width="100%" height="300" src="//jsfiddle.net/nycucumber/wr58k4of/1/embedded/html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-        </li>
-
-    </ol>
+<blockquote>
+    <p>Typography is like a goblin holding the wine. If you notice it, there is a problem.</p>
+    <footer>Beatrice Warde, Author of The Crystal Goblet: sixteen essays on typography, 1955</footer>
+</blockquote>
+    <div class="row"> 
+        <div class="col-lg-6">
+            <img src="{{ '/img/week8/wine.jpg' | prepend: site.baseurl }}" class="img-responsive">
+        </div>
+    </div>
+<div>
+    <h2>Typography as Design</h2>
+    <a href="https://www.pinterest.com/zztheoinky/graphic-design-typography/">Variety of Usage</a>
+    <br><a href="http://www.rhymeandreasoncreative.com/portfolio/index.php?project=typeface">Type Face by Mary Huang</a>
 </div>
 
-<div class="row">
-    <h2>Animate.css</h2>
-    <ol>
-        <li>Let's first have some fun. Go to the link below and play with the different pre-canned animation effects here.
-            <a href="http://daneden.github.io/animate.css/">http://daneden.github.io/animate.css/</a>
-        </li>
-        <li>Let's have more fun by adding this htmp example code into our own html elements.
-            <iframe width="100%" height="300" src="//jsfiddle.net/nycucumber/wr58k4of/4/embedded/html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-            You can swap "bounced" with anything from this list here.
-            <a href="https://github.com/daneden/animate.css">https://github.com/daneden/animate.css</a>
-        </li>
-        <li>Now, let's add some jQuery to controll the timing of these effects. First, when index.html is fully loaded, fade in our navbar. 
-            {% highlight js %} 
-            $(document).ready(function () { 
-                $("nav").addClass('animated fadeIn'); 
-            }); 
-            {% endhighlight %}
-        </li>
-        <li>Now, let's tell jQuery to help us measure the location of a few things: 
-            <br>how much is the entire document scrolled down
-            <br>our animated element's location from the top of the document. It's called offset.
-            <br>viewport height
-        </li>
-        <hr>
-        <li>We will be able to tell wheather our element has entered into viewport by using this if statment<br>
-       <br> <strong>offset - document_scoll_distance < than viewport height</strong><br><br>
-            
-            {% highlight js %}
-$(document).ready(function () {
-    $("nav").addClass('animated fadeIn');
-    $("#featured_1").addClass('animated fadeInRight');
-});
+<div>
+    <h2>Typography as Content and Expression</h2>
+    <a href="https://vimeo.com/658158">Solar Music Viz - with Lyrics</a>
+    <br><a href="https://vimeo.com/80573061">Lyrical Particles - Salem Al-Mansoori</a>
+    <br><a href=""></a>
+</div>
+
+<div>
+    <h2>Typography as Performance</h2>
+    <a href="http://camilleutterback.com/projects/text-rain/">Text Rain by Camille Utterback</a>
+</div>
+
+<div>
+    <h2>Data Visualization - Typography as ledger, plotting symbol, Units of Measure</h2>
+    <a href="https://youtu.be/qTEchen97rQ?list=PLUgRTD1mpwSXQmCShm0FkyJUFNw3CxAwk">Ice Bucket Challenge</a>
+    <br><a href="https://youtu.be/JcY2_Gzx_TQ">Heart Beat Dataviz</a>
+</div>
+
+<div>
+    <h2>Fundations of Typography</h2>
+    <br><a href="http://www.lynda.com/Design-Design-Skills-tutorials/Serif-vs-sans-serif/106698/121847-4.html">Serif and Sans Serif</a>
+    <p>We'll go into more depth on type classification later on in this course. There are tens of thousands of typefaces in each of these categories that are available from the many type foundries and type sellers and no one can be familiar with all of them, not even me. But if you can learn to distinguish the important differences and characteristics of basic type styles, it will help you make smart choices in designing your projects. Being a good type detective and learning to see the different types of Serif and Sans Serif is the first step.</p>
+    <br><a href="http://www.lynda.com/Design-Design-Skills-tutorials/Display-type-vs-text-type/106698/121848-4.html">Display Type vs. Text Type</a>
+    <p>An important distinction in typography is the difference between Text Type and Display Type. Here's what you need to remember. Text Type is type that is designed to be read in large quantities at small sizes. For example, the bulk of the text in any newspaper, magazine, or book is Text Type. It's also called Body Type or Body Copy. Display type, on the other hand, is type that 14 point or larger, and it's typically used in small quantities for emphasis and effect.</p>
+    <br><a href="http://www.lynda.com/Design-Design-Skills-tutorials/Kerning-kerning-pairs/106698/121861-4.html">Kerning and kerning pairs</a>
+    <p>Kerning is the adjustment of the spaces between two specific letters. It's different from tracking, which is the adjustment of the spaces between a group of letters. The goal of kerning is to create a consistent rhythm of space between characters which helps readability. At text sizes, you don't have to adjust the kerning because the type designer has already done that for you. There are thousands of carefully calculated spaces between every possible letter combination already built into a typeface by its creator. These are called kerning pairs.</p>
+    <br><a href="http://www.lynda.com/Design-Design-Skills-tutorials/Tracking-leading/106698/121862-4.html">Tracking and Leading</a>
+    <p>Tracking is an overall adjustment of space applied equally to a word, a line, or a passage of text. Leading is the space between lines measured from the baseline to baseline. Tracking and leading can both affect the overall typographic color or tonal weight of the page and its legibility.</p>
+    <br><a href="http://www.lynda.com/Design-Design-Skills-tutorials/Exploring-variations-type-alignment/106698/121863-4.html">Type Alignment</a>
+    <p>There are five possible kinds of alignment, Flush left, Flush right, Justified, Centered, and Random, also known as asymmetrical. These are few more terms to add your type vocabulary. When lines of type are aligned on the left, we say it is flush left. Notice that the words are uneven or ragged on the right that is rag right. This is a common form of typesetting because we read from left to right and flush left type allows us to find our place on the next line more easily.</p>
+    <br><a href="http://www.lynda.com/Design-Design-Skills-tutorials/Other-typographic-best-practices/106698/121866-4.html">Typographical Best Practices</a>
+</div>
+
+<div>
+    <h2>Technical Guide - download and install fonts</h2>
+    <h4>Download and install fonts</h4>
+    <p>download fonts ==> unzip ==> open folder ==> click Install Button inside .otf or .ttf file</p>
+    <a href="http://www.awwwards.com/100-greatest-free-fonts-collection-for-2015.html">top 100 free typefaces for 2015 by AWWWARDS.com</a>
+    <br><a href="https://www.myfonts.com/">myFonts.com</a>
+    <br><a href="http://www.1001freefonts.com/">1001 free fonts</a>
+    <br><a href="http://www.myfonts.com/">myFonts.com</a>
+    <br><a href="https://forums.adobe.com/thread/1213697?tstart=0">Install font on Mac</a>
+    <h4>Identify Fonts</h4>
+    <a href="https://www.myfonts.com/WhatTheFont/">whatthefont</a>
+    <br><a href="http://typophile.tumblr.com/">typohile</a>
+    <h4>Convert Text to Outline</h4>
+    <a href="http://www.wikihow.com/Convert-Text-to-Outline-in-Photoshop">convert text to outline</a>
+</div>
+
+<div>
+    <h2>In-class excercise</h2>
+    <h4>content</h4>
+    <a href="http://www.hz-journal.org/n19/betancourt.html">Critical Glitches Article</a>
+    <br><a href="https://www.dropbox.com/home/excercise%20file%20-%20hw6">link to excercise file</a>
+    <div class="row"> 
+        <div class="col-lg-12">
+            <img src="{{ '/img/week8/magazine.jpg' | prepend: site.baseurl }}" class="img-responsive">
+        </div>
+        <div class="col-lg-12">
+            <img src="{{ '/img/week8/magazine_grid.jpg' | prepend: site.baseurl }}" class="img-responsive">
+        </div>
+    </div>
+</div>
+
+<div>
+    <h2>Assignment - Reading</h2>
+    <p>Reading Assignment <a href="https://www.dropbox.com/s/8nc70zpvpbrhtcb/type_primer.pdf?dl=0">Adobe Typography Primer</a></p>
+    <p>Download 5 fonts of your choice onto photoshop</p>
+</div>
 
 
-$(window).scroll(function(){
-//    console.log("scrolled!");   
-    var how_much_document_scrolled = $(document).scrollTop();
-//    console.log(how_much_document_scrolled);
-    
-    var h1_offset_top = $('#tagline h1').offset().top;
-     console.log(h1_offset_top);
-    
-//    console.log(how_much_document_scrolled + "," + h1_offset_top);
-    
-    if(h1_offset_top - how_much_document_scrolled < window.innerHeight){
-        $('#tagline h1').addClass('animated fadeInDown');
-    }
-    
-    
-    var h3_offset_top = $('#founder h3').offset().top;
-    if(h3_offset_top - how_much_document_scrolled < window.innerHeight-100){
-        $('#founder h3').addClass('animated lightSpeedIn');
-    }
-});
-            {% endhighlight %}
-                                                                        
-        </li><hr>
-        <li>Let's do one more example. Say we want the h3 tag inside #founder id to bounce in from right when it is 100 px above the bottom of the viewport.
-        <iframe width="100%" height="300" src="//jsfiddle.net/nycucumber/wr58k4of/5/embedded/js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-        
-        </li>
-    </ol>
-
+<div>
+    <h2>Assignment - Design</h2>
+    <p>Design two pages of a magazine. Use at least two different fonts from the same font family, or two different fonts that have similar font style. Use one font as decorative font, focusing on it's asthetic values such as scale, kerning, cap height, base height, ascender, descender, spacing. Use the other font as paragraph fonts, focusing on leading, paragraph alignment, line length, readability, legibility.</p>
+    <p>Set up a 19 x 14 inch canvas and save as .psd file</p>
+    <p>set up two 8 x 12 inch canvases and save as .psd file</p>
+    <p>Inside the big canvas, click File==>Place and place the two smaller canvases side by side.</p>
+    <p>Save the big canvas again. Close the two smaller canvases and click them open through the layers in the big canvas.</p>
+    <p>Drag the 12-column bootstrap grid inside the smaller canvases and start designing. Checking back inside the big canvas frequently for coherece of style.</p>
+    <p>Use default bootstrap 12 grid system to style both pages - see link in In-class excercise.</p>
+    <h4>Visual References</h4>
+    <div class="row"> 
+        <div class="col-lg-12">
+            <img src="{{ '/img/week8/example2.jpg' | prepend: site.baseurl }}" class="img-responsive">
+        </div>
+        <div class="col-lg-12">
+            <img src="{{ '/img/week8/example3.png' | prepend: site.baseurl }}" class="img-responsive">
+        </div>
+        <div class="col-lg-12">
+            <img src="{{ '/img/week8/example4.jpg' | prepend: site.baseurl }}" class="img-responsive">
+        </div>
+        <div class="col-lg-12">
+            <img src="{{ '/img/week8/example5.jpg' | prepend: site.baseurl }}" class="img-responsive">
+        </div>
+         <div class="col-lg-12">
+            <img src="{{ '/img/week8/example6.jpg' | prepend: site.baseurl }}" class="img-responsive">
+        </div>
+    </div>
+    <h4>Inspiration for layout design</h4>
+    <div class="row"> 
+        <div class="col-lg-12">
+            <img src="{{ '/img/week8/layoutexample1.jpg' | prepend: site.baseurl }}" class="img-responsive">
+        </div>
+        <div class="col-lg-12">
+            <img src="{{ '/img/week8/layoutexample2.jpg' | prepend: site.baseurl }}" class="img-responsive">
+        </div>
+        <div class="col-lg-12">
+            <img src="{{ '/img/week8/layoutexample4.jpg' | prepend: site.baseurl }}" class="img-responsive">
+        </div>
+        <div class="col-lg-12">
+            <img src="{{ '/img/week8/layoutexample5.jpg' | prepend: site.baseurl }}" class="img-responsive">
+        </div>
+    </div>
+    <h4>Grid - Wireframe - Layout</h4>
+      <div class="row"> 
+        <div class="col-lg-12">
+            <img src="{{ '/img/week8/magazine1.jpg' | prepend: site.baseurl }}" class="img-responsive">
+        </div>
+        <div class="col-lg-12">
+            <img src="{{ '/img/week8/magazine2.jpg' | prepend: site.baseurl }}" class="img-responsive">
+        </div>
+        <div class="col-lg-12">
+            <img src="{{ '/img/week8/magazine3.jpg' | prepend: site.baseurl }}" class="img-responsive">
+        </div>
+    </div>
 </div>
