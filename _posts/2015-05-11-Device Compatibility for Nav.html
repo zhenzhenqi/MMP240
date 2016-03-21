@@ -2,14 +2,19 @@
 layout: default 
 ---
 
+<div>
+    <h2>Android Devices</h2>
+    <p> If you use nested menu system on an Android device, then Touchstart will activate the hover. However, if the top level link is linked to an actual URL, or any other page, the Android device will activate the submenu, but then it will immediately navigate away to the final page. So, if you want to support submenus on the Android platform, and allow people to select those with touch, make sure that the top level item is linked to a pound sign, or a hash symbol, which is a self-link.</p>
+</div>
+
+<div>
+    <h2>IOS Devices</h2>
+    <p>On the iOS platform, Touchstart also activates a hover, just like on Android. However, if you tap the link a second time, the browser will then navigate away. This means, on the iOS platform, you can have your top-level navigation items linked to a page, in addition to having them trigger the submenu. The biggest compatibility issue you're going to find is with touch-enabled PCs.</p>
+</div>
 
 <div>
     <h2>Touch-sensitive PCs</h2>
     <p>These  devices do not activate CSS hover classes based on touch. So when you first tap on the navigation items, nothing's going to happen. If they're hyperlinked, you'll go to the hyperlink, but there's no way to activate the submenu simply using the pseudo-class of hover in CSS. The browsers on these devices do support something called ARIA, which stands for Accessible Rich Internet Applications. And you can read more about this at (URL shown on screen) And actually, ARIA attributes are really quick and easy to add into our menu system.<br>And since they use standard HTML attributes, this won't have any negative effect on other browsers and devices. So, what we can simply do is come in here and add the 'aria-haspopup' attribute, and set that equal to "true". And what we need to do is apply that to any anchor tag inside of a list item that triggers a submenu. So, with the increasing number of touch-enabled PCs being sold, and the fact that adding these tags has no effect on other browsers, I would definitely recommend we add the attributes into our navigation system.</p>
 </div>
 
-<div>
-   <h2></h2>
-   <p></p>
-</div>
 
