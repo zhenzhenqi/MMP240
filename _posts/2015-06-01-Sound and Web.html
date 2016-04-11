@@ -1,0 +1,233 @@
+--- 
+layout: default 
+---
+<div>
+    <h2>Music and Sound - Minim Library</h2>
+</div>
+
+<div>
+    <h2>Fundation of Sound Analaysis</h2>
+    <h4>Sound</h4>
+    <p>Sound is transmitted through gases, plasma, and liquids as longitudinal waves, also called compression waves. It requires a medium to propagate. Below are graphics of spherical compression and Sinusoidal waves of various frequencies.</p>
+    <div class="row">
+        <div class="col-lg-6">
+            <img src="{{ '/img/week10/pressure_waves.gif' | prepend: site.baseurl }}" class="img-responsive">
+        </div>
+         <div class="col-lg-6">
+            <img src="{{ '/img/week10/different_frequencies.png' | prepend: site.baseurl }}" class="img-responsive">
+        </div>
+    </div>
+    <h4>Amplitude</h4>
+    <p>There are two main properties of a regular vibration - the amplitude and the frequency - which affect the way it sounds. Amplitude is the size of the vibration, and this determines how loud the sound is. Larger vibrations make a louder sound.</p>
+     <div class="row">
+        <div class="col-lg-8">
+            <img src="{{ '/img/week10/ampwaves.gif' | prepend: site.baseurl }}" class="img-responsive">
+        </div>
+    </div>
+    <h4>Frequency</h4>
+    <p>Frequency is the speed of the vibration, and this determines the pitch of the sound.  It is only useful or meaningful for musical sounds, where there is a strongly regular waveform.
+
+</p>
+    <div class="row">
+        <div class="col-lg-8">
+            <img src="{{ '/img/week10/freqwaves.gif' | prepend: site.baseurl }}" class="img-responsive">
+        </div>
+    </div>
+    <p>Frequency is measured as the number of wave cycles that occur in one second.  The unit of frequency measurement is Hertz (Hz for short). A frequency of 1 Hz means one wave cycle per second.  A frequency of 10 Hz means ten wave cycles per second, where the cycles are much shorter and closer together. The note A which is above Middle C has a frequency of 440 Hz. It is often used as a reference frequency for tuning musical instruments.</p>
+    <div class="row">
+        <div class="col-lg-8">
+            <img src="{{ '/img/week10/freqhertz.gif' | prepend: site.baseurl }}" class="img-responsive">
+        </div>
+    </div>
+   
+    <h4>How do we hear sound at different pitch</h4>
+    <p>Pitch is our perceptual interpretation of frequency. Ideal human hearing ranges from 20 to 20,000 Hz, yet we have our greatest sensitivity to frequencies which lie within 200 to 2000 Hz, which takes up two-thirds of the distance on the basilar membrane.</p>
+    <div class="row">
+        <div class="col-lg-8">
+            <img src="{{ '/img/week10/basilar_membrane.png' | prepend: site.baseurl }}" class="img-responsive">
+        </div>
+    </div>
+    <h4>FFT Sound Analysis</h4>
+    <p>Fourier transform (FT) is a reversible mathematical transform named after the French
+mathematician Joseph Fourier (1768-1830) (Figure 6). The transform decomposes a time
+series into a sum of finite series of sine or cosine functions. Fast Fourier Transform (FFT) is an algorithm to  quickly compute the FT.</p>
+    <div class="row">
+        <div class="col-lg-8">
+            <img src="{{ '/img/week10/fft1.png' | prepend: site.baseurl }}" class="img-responsive">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8">
+            <img src="{{ '/img/week10/fft2.png' | prepend: site.baseurl }}" class="img-responsive">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8">
+            <img src="{{ '/img/week10/fft3.png' | prepend: site.baseurl }}" class="img-responsive">
+        </div>
+    </div>
+</div>
+
+<div>
+    <h4>Octave</h4>
+    <p>In music, an octave (Latin: octavus: eighth) or perfect octave is the interval between one musical pitch and another with half or double its frequency. Below is a keyboard that shows three complete Octaves, each divided to seven bands. This is also how the FFT object in Processing analyse sound on the x axis. The y axis of the FFT object shows the relative amplitude of each frequency.</p>
+    <div class="row">
+        <div class="col-lg-8">
+            <img src="{{ '/img/week10/octave.png' | prepend: site.baseurl }}" class="img-responsive">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8">
+            <img src="{{ '/img/week10/processing.png' | prepend: site.baseurl }}" class="img-responsive">
+        </div>
+    </div>
+</div>
+
+<div>
+    <h2>Inspiration</h2>
+    <ul>
+        <li><a href="http://lettersfrommunich.wikispaces.com/Kandinsky's+Color+Theory">Kandinsky's Color Theory</a>
+        </li>
+    </ul>
+
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=they7m6YePo">Optical Poem, Oskar Fischinger's 1938 visualization of Franz Liszt's "2nd Hungarian Rhapsody"</a>
+        </li>
+        <li><a href="http://www.notations21.net/">Notations21</a>
+        </li>
+        <li><a href="http://www.pianophase.com/">Piano Phase (Alex Chen)</a>
+        </li>
+        <li><a href="http://www.georgeandjonathan.com/">George &amp; Jonathan</a>
+        </li>
+        <li><a href="http://www.dennis.video/">dennis.video, generative video by George ^</a>
+        </li>
+        <li><a href="http://www.musanim.com/">Stephen Malinowski's Music Animation Machine</a>
+        </li>
+        <li><a href="https://www.youtube.com/watch?v=71hNl_skTZQ">Artikulation (Rainer Wehinger / Gyorgy Ligeti)</a>
+        </li>
+        <li><a href="http://animatednotation.com">animatednotation.com</a>
+        </li>
+        <li><a href="https://www.youtube.com/watch?list=PLReZkoQinwGwrB_XqiBMqfRpq5gxDB03Z&amp;v=ZrKgyY5aDvA">John Whitney</a>
+        </li>
+        <li><a href="https://www.youtube.com/watch?v=XnemXS9bVhk">Mark Fell - Skydancer</a>
+        </li>
+    </ul>
+
+    <p><strong>Interactive</strong>
+    </p>
+
+    <ul>
+        <li><a href="http://computer.jazz">computer.jazz (Yotam Mann, Sarah Rothberg)</a>
+        </li>
+        <li><a href="http://www.patatap.com/">Patatap (Jono Brandel)</a>
+        </li>
+        <li><a href="http://jeffro.nfshost.com/">jeffro / xtal</a>
+        </li>
+        <li><a href="http://indredibox.com">Incredibox</a>
+        </li>
+    </ul>
+
+    <p><strong>Audio</strong>
+    </p>
+
+    <ul>
+        <li><a href="https://vimeo.com/111593305">Cymatics</a>
+        </li>
+        <li><a href="https://vimeo.com/25037421">Golan Levin, Zach Lieberman, Jaap Blonk, Joan La Barbara (w/ autocorrelation)</a>
+        </li>
+        <li><a href="http://oscillator-art.herokuapp.com">Oscillator Art (TK Broderick)</a>
+        </li>
+        <li><a href="http://www.openprocessing.org/sketch/138877">Music Makes You Travel (makio135)</a>
+        </li>
+        <li><a href="http://wemakeawesomesh.it/musicviz/ripple/">Ripple</a>
+        </li>
+        <li><a href="https://www.youtube.com/watch?v=omDK2Cm2mwo">Ryoji Ikeda</a>
+        </li>
+    </ul>
+
+    <p><strong>Data Sonification</strong>
+    </p>
+
+    <ul>
+        <li><a href="http://blog.chartbeat.com/2013/10/09/listening-to-the-data/">Listening to the Data</a>
+        </li>
+        <li><a href="http://listen.hatnote.com/">Listen to Wikipedia</a>
+        </li>
+        <li><a href="http://static.echonest.com/playlist/moms/">Metadata - Echo Nest's Map of Musical Styles</a>
+        </li>
+        <li><a href="https://www.youtube.com/watch?v=BUkwbsd-NcA">Making Music with Tennis Data</a>
+        </li>
+        <li><a href="http://b2renger.github.io/pages_p5js/flock/index.html">Sonifying the Flocking Algorithm (@b2renger)</a>
+        </li>
+    </ul>
+
+    <p><strong>Musical Form</strong>
+    </p>
+
+    <ul>
+        <li><a href="http://www.bewitched.com/song.html">The Shape of Song (Martin Wattenberg)</a>
+        </li>
+        <li><a href="http://labs.echonest.com/Uploader/index.html?trid=TRSFLTX13AFB700570">Infinite Jukebox (Paul Lamere / Echo Nest)</a>
+        </li>
+    </ul>
+
+    <p><strong>Lyrics</strong>
+    </p>
+
+    <ul>
+        <li><a href="https://vimeo.com/658158">Solar (Robert Hodgin)</a>
+        </li>
+        <li><a href="https://vimeo.com/80573061">Lyrical Particles (Salem Al-Mansoori)</a>
+        </li>
+    </ul>
+</div>
+
+<div>
+    <h2>Use Fast Forier Transformation to analyze Time Series Audio Signal(digital music file)</h2>
+{% highlight js %}  
+import ddf.minim.analysis.*;
+import ddf.minim.*;
+
+Minim       minim;
+AudioPlayer jingle;
+FFT         fft;
+
+void setup()
+{
+  size(512, 200, P3D);
+  
+  minim = new Minim(this);
+  
+  // specify that we want the audio buffers of the AudioPlayer
+  // to be 1024 samples long because our FFT needs to have 
+  // a power-of-two buffer size and this is a good size.
+  jingle = minim.loadFile("jingle.mp3", 1024);
+  
+  // loop the file indefinitely
+  jingle.loop();
+  
+  // create an FFT object that has a time-domain buffer 
+  // the same size as jingle's sample buffer
+  // note that this needs to be a power of two 
+  // and that it means the size of the spectrum will be half as large.
+  fft = new FFT( jingle.bufferSize(), jingle.sampleRate() );
+  
+}
+
+void draw()
+{
+  background(0);
+  stroke(255);
+  
+  // perform a forward FFT on the samples in jingle's mix buffer,
+  // which contains the mix of both the left and right channels of the file
+  fft.forward( jingle.mix );
+  
+  for(int i = 0; i < fft.specSize(); i++)
+  {
+    // draw the line for frequency band i, scaling it up a bit so we can see it
+    line( i, height, i, height - fft.getBand(i)*8 );
+  }
+}
+{% endhighlight %} 
+</div>
