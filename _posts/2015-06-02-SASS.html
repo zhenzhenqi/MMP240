@@ -47,6 +47,8 @@ layout: default
     </ol>
     
     
+    
+    
 </div>
  1.  2.    Nested Style Rule to sections that have nested structure, i.e.., Media Section (ordered lists) 1. define margin, padding for main level 2. define specific margin, border, color, font size for nested level   Break CSS into functional modular code: (a great and logical way to organize styling code) 1. create variables.scss 1. 1transfer all color variables, theme color variables and font variables into above file. 2. add @import "variables.scss" into style.scss  2. create base.scss 1. transfer html, body, container, h1 to h6 code in this file 2. add @import "base.scss" into style.scss 3. create modules folder 4. inside modules, create media.scss 1. transfer all media code inside 2. add @import "modules/media.scss" into styles.scss 5. download normalize.css and import it to styles.scss   Work with Mixin (js like functions) 1.create backgrounds.scss file and link to style.scss. Work on nested styling for the section. 2. add “class = background” to jumbotron section 3. create mixins.scss in sass folder and link to style.scss 4. create background image mixin and add to jumbotron 5. in html below buttons section add:
 <section class="bridge background">
