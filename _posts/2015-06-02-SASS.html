@@ -2,9 +2,9 @@
 layout: default 
 ---
 
-<p>what’s SASS?</p>
 
 <div>
+    <p>what’s SASS?</p>
     <blockquote>
         Sass is a meta-language on top of CSS that’s used to describe the style of a document cleanly and structurally, with more power than flat CSS allows. Sass both provides a simpler, more elegant syntax for CSS and implements various features that are useful for creating manageable stylesheets.
         <footer>The Sass website <a href="http://bkaprt.com/sass/4/">(http://bkaprt.com/sass/4/)</a> </footer>
@@ -46,14 +46,66 @@ layout: default
         <li>Replace h1 to h6 color to above variable</li>
     </ol>
     
+    <h4>Nested Style Rule to sections that have nested structure, i.e.., Media Section (ordered lists)</h4>
+    <ol>
+        <li>define margin, padding for main level</li>
+        <li>define specific margin, border, color, font size for nested level</li>
+    </ol>
     
+    <h4>Break CSS into functional modular code: (a great and logical way to organize styling code)</h4>
+    <ol>
+        <li>create variables.scss
+            <ol>
+                <li>transfer all color variables, theme color variables and font variables into above file</li>
+                <li>add @import "variables.scss" into style.scss</li>
+            </ol>
+        </li>
+        <li>create base.scss
+            <ol>
+                <li>transfer html, body, container, h1 to h6 code in this file</li>
+                <li>add @import "base.scss" into style.scss</li>
+            </ol>
+        </li>
+        <li>create modules folder</li>
+        <li>inside modules, create media.scss
+            <ol>
+                <li>transfer all media code inside</li>
+                <li>add @import "modules/media.scss" into styles.scss</li>
+            </ol>
+        </li>
+        <li>download normalize.css and import it to styles.scss (ensure cross-browser rendering consistensy.</li>
+    </ol>
     
+    <h4>Work with Mixin (js like functions)</h4>
+    <ol>
+        <li>create backgrounds.scss file and link to style.scss</li>
+        <li>add “class = background” to jumbotron section</li>
+        <li>create mixins.scss in sass folder and link to style.scss</li>
+        <li>create background image mixin and add to jumbotron</li>
+        <li>in html below buttons section add:
+            {% highlight css %}
+            <section class="bridge background">
+                <div class="container">
+                    <h1>Bridge Background</h1>
+                </div>
+            </section>
+            {% endhighlight %}
+        </li>
+        <li>add bridge mixin in background.scss file</li>
+    </ol>
     
+    <h4>Working with @extend method</h4>
+    <ol>
+        <li>create inteface.scss and link to styles.scss</li>
+        <li>implement default button style and apply in html</li>
+        <li>implement additional classes</li>
+        <li>switch to @extend metho</li>
+    </ol>
+    
+    <h4>Referencing Parent Selector</h4>
+        <li>in media.scss, add &:hover and &:last-of-type </li>
+        <li>create clarify mixing in mixing.scss</li>
+        <li>add mixing in media.scss</li>
 </div>
- 1.  2.    Nested Style Rule to sections that have nested structure, i.e.., Media Section (ordered lists) 1. define margin, padding for main level 2. define specific margin, border, color, font size for nested level   Break CSS into functional modular code: (a great and logical way to organize styling code) 1. create variables.scss 1. 1transfer all color variables, theme color variables and font variables into above file. 2. add @import "variables.scss" into style.scss  2. create base.scss 1. transfer html, body, container, h1 to h6 code in this file 2. add @import "base.scss" into style.scss 3. create modules folder 4. inside modules, create media.scss 1. transfer all media code inside 2. add @import "modules/media.scss" into styles.scss 5. download normalize.css and import it to styles.scss   Work with Mixin (js like functions) 1.create backgrounds.scss file and link to style.scss. Work on nested styling for the section. 2. add “class = background” to jumbotron section 3. create mixins.scss in sass folder and link to style.scss 4. create background image mixin and add to jumbotron 5. in html below buttons section add:
-<section class="bridge background">
-    <div class="container">
-        <h1>Bridge Background</h1>
-    </div>
-</section>
-6. add bridge mixin in background.scss file Working with @extend method 1. create inteface.scss and link to styles.scss 2. implement default button style and apply in html 3. implement additional classes 4. switch to @extend method Referencing Parent Selector 1. in media.scss, add &:hover and &:last-of-type 2. create clarify mixing in mixing.scss 3. add mixing in media.scss
+
+ 
