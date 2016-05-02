@@ -69,8 +69,28 @@ layout: default
         <li>Compare headline vs paragraph style</li>
         <li>Click USE, check load speed, and select font weight</li>
         <li>Pick css import and paste link on top of the css style sheet</li>
+            {% highlight css%}
+                @import url(https://fonts.googleapis.com/css?family=Roboto+Slab|Merriweather|Oswald|Bree+Serif);
+            {% endhighlight %}
         <li>Specify font-main and font-highlight variable</li>
-        <li>Set body to font-main and h1 to h6 to font-hightlight</li>
+            {% highlight css%}
+                $font-main: 'Merriweather', Helvetica, sans-serif;
+                $font-highlight: 'Bree Serif',Helvetica, sans-serif;
+            {% endhighlight %}
+        <li>Set body to font-main</li>
+            {% highlight css%}
+                body {
+                margin: 0;
+                padding: 0;
+                font-size: 1.8em;
+                font-family: @font-main;
+                color: $color-main;
+                background-color: $color-backgrounds; 
+            {% endhighlight %}
+        <li>Set h1 to h6 to font-hightlight</li>
+            {% highlight css%}
+                
+            {% endhighlight %}
     </ol>
     
     <h4>Working with font Color Variables:</h4>
