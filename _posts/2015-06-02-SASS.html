@@ -91,7 +91,6 @@ layout: default
             {% highlight css%}
                 h1, h2, h3, h4, h5, h6{
                 font-family: $font-highlight;
-                color: $color-headlines;
                 }
             {% endhighlight %}
     </ol>
@@ -100,9 +99,16 @@ layout: default
     <ol>
         <li>Create color-headlines</li>
                 {% highlight css%}
+                    $color-main: $darkblue;
+                    $color-backgrounds: $offwhite;
+                    $color-headlines: $red;
                 {% endhighlight %}
         <li>Replace h1 to h6 color to above variable</li>
                 {% highlight css%}
+                    h1, h2, h3, h4, h5, h6{
+                    font-family: $font-highlight;
+                    color: $color-headlines;
+                    }
                 {% endhighlight %}
     </ol>
     
