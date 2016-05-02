@@ -42,8 +42,25 @@ layout: default
             {% endhighlight %}
         </li>
         <li>Create color variables according to your design file’s color palette</li>
+            {% highlight css%}
+                $offwhite: #EEE8D6;
+                $darkblue: #022933;
+                $yellow: #FFBA00;
+                $blue: #0076A3;
+                $green: #548C27;
+                $orange: #F39856;
+                $red: #D14348;
+                $purple: #6D73C2;
+             {% endhighlight %}
+
+
         <li>Create color-main and color-backgrounds variable</li>
+            {% highlight css%}
+                $color-main: $darkblue;
+                $color-backgrounds: $offwhite;
+            {% endhighlight %}
         <li>Replace body color and background color with above variables</li>
+            
     </ol>
     
     <h4>Working with Font Variables:</h4>
