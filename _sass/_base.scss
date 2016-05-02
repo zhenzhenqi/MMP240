@@ -34,9 +34,12 @@ p, blockquote, pre, dl, figure,
 }
 
 ul, ol{
-    margin-bottom: $spacing-unit * 2;
+    margin-bottom: $spacing-unit;
 }
 
+div{
+    margin-bottom: $spacing-unit * 2;
+}
 
 
 /**
