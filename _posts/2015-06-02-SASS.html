@@ -25,6 +25,23 @@ layout: default
     
     <h4>Working With Color Variables:</h4>
     <ol>
+        <li>In SASS folder, create style.scss file and input the following css:
+            {% highlight css%}
+                html {
+                    font-size: 62.5%;
+                }
+
+                body {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 1.8em;
+                    font-family: 'Helvetica', sans-serif;
+                    color: #022933;
+                    background-color: #EEE8D6;
+                    background-color: $color-backgrounds;
+                }
+            {% end highlight %}
+        </li>
         <li>Create color variables according to your design file’s color palette</li>
         <li>Create color-main and color-backgrounds variable</li>
         <li>Replace body color and background color with above variables</li>
