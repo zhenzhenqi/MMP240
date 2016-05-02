@@ -210,8 +210,23 @@ layout: default
     
     <h4>Referencing Parent Selector</h4>
         <li>in media.scss, add &:hover and &:last-of-type </li>
-        <li>create clarify mixing in mixing.scss</li>
+        <li>create clearfix mixin in mixin.scss</li>
+                {% highlight css%}
+                    //clearfix for media section
+                    @mixin clearfix {
+                      &:before,
+                      &:after {
+                        content: '';
+                        display: table;
+                      }
+                      &:after {
+                        clear: both;
+                      }
+                    }
+                {% endhighlight%}
         <li>add mixing in media.scss</li>
+                {% highlight css%}
+                {% endhighlight%}
 </div>
 
  
