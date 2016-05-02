@@ -115,7 +115,47 @@ layout: default
     <h4>Nested Style Rule to sections that have nested structure, i.e.., Media Section (ordered lists)</h4>
     <ol>
         <li>define margin, padding for main level</li>
+                {% highlight css%}
+                    .media{
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+                    }  
+                {% endhighlight %}
         <li>define specific margin, border, color, font size for nested level</li>
+                {% highlight css%}
+                     .media{
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+
+                        .item{
+                            margin-bottom: 20px;
+                            border-top: 1px dotted $color-item-border;
+                            padding-top: 10px;
+                        }
+                        .head{
+                            margin: 0;
+                            padding: 0;
+                            color: $color-media-head;
+                            font-size: 2rem;
+                        }
+
+                        p{
+                            margin: 0;
+                            font-size: 1.5rem;
+                        }
+
+                        img{
+                            float: left;
+                            margin-right: 10px;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: $color-main;
+                        }
+                    }
+                {% endhighlight %}
     </ol>
     
     <h4>Break CSS into functional modular code: (a great and logical way to organize styling code)</h4>
