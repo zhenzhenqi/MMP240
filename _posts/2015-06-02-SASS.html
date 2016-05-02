@@ -89,14 +89,21 @@ layout: default
             {% endhighlight %}
         <li>Set h1 to h6 to font-hightlight</li>
             {% highlight css%}
-                
+                h1, h2, h3, h4, h5, h6{
+                font-family: $font-highlight;
+                color: $color-headlines;
+                }
             {% endhighlight %}
     </ol>
     
     <h4>Working with font Color Variables:</h4>
     <ol>
         <li>Create color-headlines</li>
+                {% highlight css%}
+                {% endhighlight %}
         <li>Replace h1 to h6 color to above variable</li>
+                {% highlight css%}
+                {% endhighlight %}
     </ol>
     
     <h4>Nested Style Rule to sections that have nested structure, i.e.., Media Section (ordered lists)</h4>
