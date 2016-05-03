@@ -52,5 +52,29 @@ layout: default
 
 <div>
     <h2>A Git Workflow</h2>
-    
+    <p>To publish a web Porject on Github for the first time, </p>
+    <code class="language-markup">
+        $cd Documents/newWebProjectFolder
+        $git init
+        $git status
+        $git add -all
+        $git commit -m "first commit"
+        $git remote add origin git@github.com:zhenzhenqi/singlePageSite.git
+        $git checkout master
+        $git branch gh-pages
+        $git git push origin gh-pages
+    </code>
+    <p>To download an existing project on any computer, open command line and type</p>
+    <code class="language-markup">
+        $cd Document
+        $ls
+        $git clone -b gh-pages https://github.com/zhenzhenqi/myWebProject
+    </code>
+    <p>After finishing editing a change, type</p>
+    <code class="language-markup">
+        $git status
+        $git add --all
+        $git commit -m "button styling"
+        $git push origin gh-pages
+    </code>
 </div>
