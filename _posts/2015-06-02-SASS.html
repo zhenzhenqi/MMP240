@@ -212,7 +212,6 @@ layout: default
     </ol>
     
     <h4>Referencing Parent Selector</h4>
-        <li>in media.scss, add &:hover and &:last-of-type </li>
         <li>create clearfix mixin in mixin.scss</li>
                 {% highlight css%}
                     //clearfix for media section
@@ -227,8 +226,28 @@ layout: default
                       }
                     }
                 {% endhighlight%}
-        <li>add mixin in media.scss</li>
+        <li>add add &:hover, &:last-of-type, and clearfix mixin in media.scss under .item</li>
                 {% highlight css%}
+                    .media{
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+
+                        .item{
+                            padding-bottom: 10px;
+                            border-top: 1px dotted $color-item-border;
+                            padding-top: 10px;
+                            padding-left: 10px;
+                            &:hover{
+                                background: $yellow;
+                            }
+                            &:last-of-type{
+                                border-bottom: 1px dotted $color-item-border;
+                            } 
+                            @include clearfix; 
+                        }
+                ......
+                }
                 {% endhighlight%}
 </div>
 
