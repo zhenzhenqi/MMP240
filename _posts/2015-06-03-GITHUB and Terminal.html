@@ -53,12 +53,15 @@ layout: default
 <div>
     <h2>Git</h2>
     <p>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</p>
+    <p>If you’re starting to track an existing project in Git, you need to go to the project’s directory and type:</p>
+     <pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git init
+    </pre>
     <p>The main tool you use to determine which files are in which state is the <code>git status</code> command. </p>
     <pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git status
         <code class="go">On branch master</code>
         <code class="go">Your branch is up-to-date with 'origin/master'.</code>
         <code class="go">nothing to commit, working directory clean</code>
-        </pre>
+    </pre>
     
     <p>After you have created several commits, or if you have cloned a repository with an existing commit history, you’ll probably want to look back to see what has happened.
 The most basic and powerful tool to do this is the <code>git log</code> command.</p>
