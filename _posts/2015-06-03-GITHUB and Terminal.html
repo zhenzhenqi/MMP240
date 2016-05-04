@@ -56,13 +56,19 @@ layout: default
     <p>If you’re starting to track an existing project in Git, you need to go to the project’s directory and type:</p>
      <pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git init
     </pre>
+    
     <p>The main tool you use to determine which files are in which state is the <code>git status</code> command. </p>
     <pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git status
         <code class="go">On branch master</code>
         <code class="go">Your branch is up-to-date with 'origin/master'.</code>
         <code class="go">nothing to commit, working directory clean</code>
     </pre>
-    
+    <p>If you want to start version-controlling existing files (as opposed to an empty directory), you should probably begin tracking those files and do an initial commit.
+You can accomplish that with a few <code>git add</code> commands that specify the files you want to track, followed by a <code>git commit</code>:</p>
+    <pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git add *.c
+        <code class="gp">$</code> git add LICENSE
+        <code class="gp">$</code> git commit -m <code class="s1">'initial project version'</code>
+    </pre>
     <p>After you have created several commits, or if you have cloned a repository with an existing commit history, you’ll probably want to look back to see what has happened.
 The most basic and powerful tool to do this is the <code>git log</code> command.</p>
     <pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git log
@@ -82,7 +88,7 @@ The most basic and powerful tool to do this is the <code>git log</code> command.
         <code class="go">Author: Scott Chacon &amp;lt;schacon@gee-mail.com&amp;gt;</code>
         <code class="go">Date:   Sat Mar 15 10:31:28 2008 -0700</code>
 
-        <code class="go">    first commit</code>
+        <code class="go">first commit</code>
     </pre>
 </div>
 
