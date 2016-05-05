@@ -13,11 +13,11 @@ layout: default
     <pre class=" language-markup">
             <code class=" language-markup">
             $ ls
-                Adobe Acrobat XI Pro	Downloads		Pictures
-                Applications		    Dropbox			Public
-                Box Documents		    Library			Samsung
-                Desktop			        Movies			Sites
-                Documents		        Music
+            Adobe Acrobat XI Pro	Downloads		Pictures
+            Applications		    Dropbox			Public
+            Box Documents		    Library			Samsung
+            Desktop			        Movies			Sites
+            Documents		        Music
             </code>
     </pre>
     <p>There are some useful flags that come along with <code class=" language-markup">ls</code>. <code class=" language-markup">ls -l</code> will print out the directory in long format. Using the <code class=" language-markup">ls -a</code> tag will print out any <code class=" language-markup">.</code> files. Flags can be used like <code class=" language-markup">ls -l -a</code>, or if you are using more than one flag, you can string them together. Like such <code class=" language-markup">ls -la</code>. Want to know what is in a directory which out moving into it? <code class=" language-markup">ls -la Sites/</code>, this will list the files in that directory. </p>
@@ -28,22 +28,22 @@ layout: default
     </p>
     <pre class="language-markup">
             <code class=" language-markup">
-                $ cd Desktop/Projects
-                $ pwd
-                $ /Users/Rchristiani/Desktop/Projects
-                $ cd ..
-                $ pwd
-                $ /Users/Rchristiani/Desktop
+            $ cd Desktop/Projects
+            $ pwd
+            $ /Users/Rchristiani/Desktop/Projects
+            $ cd ..
+            $ pwd
+            $ /Users/Rchristiani/Desktop
             </code>
         </pre>
     <p>You can also use the <code class=" language-markup">..</code> in a more complex manner, something like:</p>
     <pre class=" language-markup">
             <code class="language-markup">
-                $ pwd
-                $ /Users/Rchristiani/Desktop/Projects/SomeSite/js
-                $ cd ../../
-                $ pwd
-                $ /Users/Rchristiani/Desktop/Projects
+            $ pwd
+            $ /Users/Rchristiani/Desktop/Projects/SomeSite/js
+            $ cd ../../
+            $ pwd
+            $ /Users/Rchristiani/Desktop/Projects
             </code>
         </pre>
     <p>Also if you know that using <code class=" language-markup">cd ../..</code> gets you to a certain point you can then go into a folder, <code class=" language-markup">cd ../../newsite</code>. If you are not sure what the directory you need to into is called, double tapping the tab key will work like the <code class=" language-markup">ls</code> command.</p>
@@ -58,7 +58,8 @@ layout: default
     </pre>
     
     <p>The main tool you use to determine which files are in which state is the <code>git status</code> command. </p>
-    <pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git status
+    <pre data-type="programlisting" data-code-language="console">
+        <code class="gp">$</code> git status
         <code class="go">On branch master</code>
         <code class="go">Your branch is up-to-date with 'origin/master'.</code>
         <code class="go">nothing to commit, working directory clean</code>
