@@ -93,6 +93,22 @@ The most basic and powerful tool to do this is the <code>git log</code> command.
 
         <code class="go">first commit</code>
     </pre>
+    <p>To check all branch status</p>
+    <pre data-type="programlisting" data-code-language="console">
+        <code class="go">$</code> git show-branch
+    </pre>
+    <p>To experiment with a previous commit and merge it to gh-pages</p>
+    <pre data-type="programlisting" data-code-language="console">
+        <code class="go">$</code> git commit
+        <code class="go">$</code> git checkout a11bef06a3f6
+        <code class="go">$</code> git add -all
+        <code class="go">$</code> git commit -m "new footer"
+        <code class="go">$</code> git branch newFooter
+        <code class="go">$</code> git checkout gh-pages
+        <code class="go">$</code> git merge newFooter
+        <code class="go">$</code> git branch -d newFooter
+        <code class="go">$</code> git push origin gh-pages
+    </pre>
 </div>
 
 <div>
