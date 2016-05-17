@@ -93,10 +93,15 @@ The most basic and powerful tool to do this is the <code>git log</code> command.
 
         <code class="go">first commit</code>
     </pre>
-    <p>To check all branch status</p>
+    <p>To check all local branch status</p>
     <pre data-type="programlisting" data-code-language="console">
         <code class="go">$</code> git show-branch
     </pre>
+    <p>To check remote origin</p>
+    <pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git remote -v
+        <code class="go">origin	https://github.com/schacon/ticgit (fetch)</code>
+        <code class="go">origin	https://github.com/schacon/ticgit (push)</code></pre>
+    
     <p>To experiment with a previous commit and merge it to gh-pages</p>
     <pre data-type="programlisting" data-code-language="console">
         <code class="go">$</code> git commit
